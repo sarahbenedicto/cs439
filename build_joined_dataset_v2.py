@@ -1,3 +1,5 @@
+#Code meant to join clean_nyc_inspection.csv and the nyc yelp restuarants
+
 import os
 import pandas as pd
 import re
@@ -25,7 +27,6 @@ ins_m = ins[ins["BORO"] == "Manhattan"].copy()
 print("Manhattan inspections shape:", ins_m.shape)
 
 #Normalization helpers
-
 def normalize_text(s):
     """Uppercase, strip, remove most punctuation and extra spaces."""
     if pd.isna(s):

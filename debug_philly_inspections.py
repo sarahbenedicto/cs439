@@ -1,3 +1,4 @@
+#Not needed file since we are not doing Philly. 
 import pandas as pd
 
 df = pd.read_json("data/raw/yelp_academic_dataset_business.json", lines=True, nrows=200000)

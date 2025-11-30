@@ -1,6 +1,6 @@
 import pandas as pd
 
-# 🔁 Update these paths if your files live somewhere else
+#Update these paths if your files live somewhere else
 INSPECTION_PATH = "clean_nyc_inspections.csv"
 YELP_PATH       = "data/processed/yelp_nyc_api_businesses.csv"
 
@@ -26,7 +26,7 @@ if "BORO" in ins.columns:
     print("Shape (Manhattan):", ins_manhattan.shape)
     print(ins_manhattan.head(5))
 
-print("\n=== YELP NYC API BUSINESSES ===")
+print("\mYELP NYC API BUSINESSES")
 print("Shape:", yelp.shape)
 print("Columns:", list(yelp.columns))
 print("\nHead:")

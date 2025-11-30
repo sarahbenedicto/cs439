@@ -1,3 +1,4 @@
+#Code to clean the clean_nyc_inspections.csv file
 import pandas as pd
 from pathlib import Path
 
@@ -16,11 +17,9 @@ def load_raw_csv(path: Path) -> pd.DataFrame:
     """Load the NYC restaurant inspection CSV."""
     return pd.read_csv(path)
 
-
 def clean_inspection_data(df: pd.DataFrame) -> pd.DataFrame:
     """
     Clean and prepare NYC inspection data.
-
     Steps:
     1. Standardize column names
     2. Parse inspection dates
@@ -56,7 +55,6 @@ def clean_inspection_data(df: pd.DataFrame) -> pd.DataFrame:
 def build_latest_restaurant_table(df: pd.DataFrame) -> pd.DataFrame:
     """
     Build a table of UNIQUE restaurants with only their most recent inspection.
-
     Why?
     - Yelp businesses are unique
     - NYC inspection file has many inspections per restaurant (one per visit)

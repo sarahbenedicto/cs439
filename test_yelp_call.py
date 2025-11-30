@@ -1,5 +1,8 @@
+#Code not needed since not using Philly anymore
+
 import requests
 
+#No API Key we are making our own
 APIKEY = "yes" #you have to make your own
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 
